@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FinTrack Pro | Settings</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/setting.css" />
+
+    <!-- Remix Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Main Container -->
+
+    <div class="main-container">
+      <!-- Sidebar -->
+
+      <aside class="right-navbar">
+        <div class="left-top-navbar">
+          <!-- Logo -->
+
+          <div class="logo-nav">
+            <img src="./assets/images/image.png" alt="FinTrack Pro" />
+          </div>
+
+          <!-- Dashboard -->
+
+          <div class="dashboard">
+            <i class="ri-dashboard-fill"></i>
+
+            <h3>
+              <a href="./dashboard.html"> Dashboard </a>
+            </h3>
+          </div>
+
+          <!-- Settings -->
+
+          <div class="settig-icon">
+            <i class="ri-settings-3-fill"></i>
+
+            <h3>
+              <a href="./setting.html"> Settings </a>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Add Transaction -->
+
+        <div class="bootom-left-content">
+          <button id="addBtn">
+            <i class="ri-add-line"></i>
+
+            Add Transaction
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+
+      <main class="left-navbar">
+        <!-- Top Navbar -->
+
+        <div class="top-nav">
+          <p id="userName"></p>
+
+          <button id="logoutBtn">
+            <i class="ri-logout-box-r-line"></i>
+
+            Logout
+          </button>
+        </div>
+
+        <!-- Content -->
+
+        <div class="down-nav">
+          <!-- Page Heading -->
+
+          <div class="top-content-setting">
+            <h1>Settings</h1>
+
+            <p>Manage your account profile and app preferences.</p>
+          </div>
+
+          <!-- Profile Card -->
+
+          <div class="center-content">
+            <div class="left-content">
+              <h2>
+                <i class="ri-user-3-line"></i>
+
+                Profile Details
+              </h2>
+
+              <!-- Input Fields -->
+
+              <div class="input-fild">
+                <!-- Full Name -->
+
+                <div class="fullname">
+                  <label for="fullName">
+                    <i class="ri-user-line"></i>
+
+                    Full Name
+                  </label>
+
+                  <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+
+                <!-- Currency -->
+
+                <div class="currency">
+                  <label for="currency">
+                    <i class="ri-money-dollar-circle-line"></i>
+
+                    Primary Currency
+                  </label>
+
+                  <select id="currency">
+                    <option value="USD">$ USD (US Dollar)</option>
+
+                    <option value="INR">₹ INR (Indian Rupee)</option>
+
+                    <option value="EUR">€ EUR (Euro)</option>
+
+                    <option value="GBP">£ GBP (British Pound)</option>
+
+                    <option value="JPY">¥ JPY (Japanese Yen)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Save Button -->
+
+              <div class="save-change-button">
+                <button id="saveBtn">
+                  <i class="ri-save-3-fill"></i>
+
+                  Save Changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- JavaScript -->
+
+    <script src="./js/setting.js"></script>
+  </body>
+</html>

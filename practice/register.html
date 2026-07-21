@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+  <body>
+    <!-- main-container -->
+    <div class="main-container">
+      <!-- section -1 -->
+      <form id="registerForm">
+        <div class="main-contant">
+          <div class="top-content">
+            <h1>Create Account</h1>
+            <h3>Join FinTrack Pro</h3>
+          </div>
+
+          <div class="middel-part">
+            <label for="username">Username</label>
+
+            <input
+              type="text"
+              id="username"
+              name="username"
+              autocomplete="username"
+              required
+            />
+
+            <label for="password">Password</label>
+
+            <input
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+
+          <div class="bottom-content">
+            <button type="submit">Register</button>
+
+            <div class="login-here">
+              <h3>Already have an Account?</h3>
+              <a href="./login.html">Login here</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./js/register.js"></script>
+  </body>
+</html>
