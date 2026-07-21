@@ -1,7 +1,7 @@
 const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 if (!currentUser) {
-  window.location.href = "./login.html";
+  window.location.href = "./index.html";
 }
 
 // Show Username ke liye
@@ -17,7 +17,7 @@ logoutBtn.addEventListener("click", function () {
   localStorage.removeItem("currentUser");
 
   // Login page par bhejo
-  window.location.href = "./login.html";
+  window.location.href = "./index.html";
 });
 
 // add transition par click karne par ye modele chalega

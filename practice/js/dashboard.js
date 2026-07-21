@@ -3,7 +3,7 @@
 const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 if (!currentUser) {
-  window.location.href = "./login.html";
+  window.location.href = "./index.html";
 }
 
 // ================= DOM =================
@@ -35,7 +35,7 @@ userName.textContent = currentUser.username;
 
 logoutBtn.addEventListener("click", () => {
   localStorage.removeItem("currentUser");
-  window.location.href = "./login.html";
+  window.location.href = "./index.html";
 });
 
 // ================= Modal =================

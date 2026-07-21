@@ -39,6 +39,6 @@ registerForm.addEventListener("submit", function (e) {
   registerForm.reset();
 
   setTimeout(() => {
-    window.location.href = "./login.html";
+    window.location.href = "./index.html";
   }, 1000);
 });

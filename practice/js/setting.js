@@ -12,7 +12,7 @@ const addBtn = document.getElementById("addBtn");
 let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 if (!currentUser) {
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 
 userName.textContent = currentUser.fullName;
@@ -96,7 +96,7 @@ logoutBtn.addEventListener("click", () => {
   localStorage.removeItem("currentUser");
 
   // login page par bhejo
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 });
 
 // add transaction button par click hone par
